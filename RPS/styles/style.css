@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Asap:wght@500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Asap','sans-serif';
+}
+
+body{
+    background-color: #00051b;
+    color: #ffffff;
+    text-align: center;
+}
+header{
+    text-align: center;
+    padding: 2%;
+    background-color: #ffffff;
+    color: #00051b;
+}
+.score-board{
+    margin: 20px auto;
+    border: 2px solid #ffffff;
+    padding: 15px 20px;
+    width: 200px;
+    border-radius: 4px;
+    text-align: center;
+    position: relative;
+    font-size: 46px;
+}
+.badge{
+    background-color: #CC0000;
+    font-size: 20px;
+    padding: 1%;
+}
+#user-label{
+    position: absolute;
+    top: 20px;
+    left: -20px;
+}
+
+#computer-label{
+    position: absolute;
+    top: 20px;
+    right: -20px;
+}
+
+.choice{
+    display: inline-block;
+    border: 5px solid #ffffff;
+    border-radius: 50%;
+    padding: 3%;
+    margin: 3% 1%;
+}
+.far{
+    display: inline-block;
+}
+.result p{
+    font-size: 26px;
+    font-weight: bold;
+}
+#action-message{
+    font-size: 26px;
+}
+.green-glow{
+    border: 5px solid #00ff00;
+    box-shadow: 0 0 10px #00ff00;
+    transition: all 0.07s ease;
+}
+
+.red-glow{
+    border: 5px solid #ff0000;
+    box-shadow: 0 0 10px #ff0000;
+    transition: all 0.07s ease;
+}
+.gray-glow{
+    border: 5px solid #4c473b;
+    box-shadow: 0 0 10px #4c473b;
+    transition: all 0.07s ease;
+}
