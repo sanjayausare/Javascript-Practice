@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+:root{
+    --size: 16;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    background-color: #ffd500;
+    
+}
+header{
+    position: relative;
+    top: 50%;
+    left: 25%;
+}
+header h1{
+    font-family: 'Press Start 2P', cursive;
+    font-size: 130%;
+}
+button{
+    font-size: 16px;
+    display: inline-block;
+    min-width: 30%;
+    min-height: 35px;
+    padding: 1%;
+    margin: 3% 1%;
+    border-radius: 6px;
+    box-shadow: 5px 5px;
+}
+.container{
+    margin: 8% 0 2% 20%;
+    width: 575px;
+    height: 575px;
+    border: 5px solid #fff;
+    display: grid;
+    box-shadow: 10px 10px;
+    grid-template-columns: repeat(var(--size),1fr);
+    grid-template-rows: repeat(var(--size),1fr);
+}
+.div{
+    background-color: #fff;
+    border: 1px solid #000;
+}
+
+@media only screen and (max-width: 1000px) {
+    body{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    header{
+        position: static;
+        text-align: center;
+        margin-top: 5%;
+    }
+    .container{
+        margin: 3% 5% 0 5%;
+        align-self: center;
+    }
+}
+@media only screen and (max-width: 750px) {
+    .container{
+        margin: 3% 5% 0 4%;
+    }
+}
+@media only screen and (max-width: 550px) {
+    .container{
+        margin: 4% 5% 0 5%;
+        width: 375px;
+        height: 375px;
+    }
+
+}
